@@ -10904,18 +10904,25 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: #ccccc0;
+  background-color: #C9E0BD;
+}
+
+.clearfix {
+  overflow: auto;
+  clear: both;
 }
 
 #header {
   text-align: center;
+  background-color: #A1E67C;
 }
 
 #header #headerTitle {
-  background-color: #A1C295;
+  background-color: #A1E67C;
   width: 100%;
   height: 150px;
   padding-top: 25px;
+  margin-bottom: -5px;
 }
 
 #header #headerTitle h1 {
@@ -10923,59 +10930,100 @@ body {
   letter-spacing: 25px;
   transition-duration: 2s;
   font-size: 40px;
+  color: #576151;
 }
 
-#header #headerTitle h1:hover {
-  letter-spacing: 1px;
+#header #headerTitle hr {
+  border: 1px solid #576151;
+  width: 60%;
   transition-duration: 2s;
 }
 
 #header #headerTitle h4 {
   font-size: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
+  color: #576151;
+  transition-duration: 2s;
 }
 
-#header hr {
-  border: 1px solid #9596C2;
-  width: 40%;
+#header #headerTitle:hover h1 {
+  letter-spacing: 4px;
+  transition-duration: 2s;
+  color: #9BAD92;
+}
+
+#header #headerTitle:hover hr {
+  width: 20%;
+  border: 1px solid #9BAD92;
+  transition-duration: 2s;
+}
+
+#header #headerTitle:hover h4 {
+  letter-spacing: 4px;
+  transition-duration: 2s;
+  color: #9BAD92;
 }
 
 #header #menuHeader ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
-  background-color: #578F43;
-  border-top: 4px solid #9596C2;
-  border-bottom: 4px solid #9596C2;
+  background-color: #A1E67C;
+  border-bottom: 4px solid #446134;
+  display: flex;
+  justify-content: center;
 }
 
 #header #menuHeader ul li {
   float: left;
-  border-right: 1px solid #9596C2;
-}
-
-#header #menuHeader ul li:first-child {
-  margin-left: 40px;
-}
-
-#header #menuHeader ul li:last-child {
-  float: right;
-  border: none;
-  margin-right: 20px;
 }
 
 #header #menuHeader ul li a {
   display: block;
   text-align: center;
   font-size: 20px;
-  color: #ccccc0;
-  padding: 8px 16px;
+  color: #576151;
+  padding: 8px 20px;
   text-decoration: none;
 }
 
 #header #menuHeader ul li a:hover {
-  background-color: #9596C2;
+  background-color: #C9E0BD;
   transition-duration: 500ms;
+}
+
+.container {
+  min-height: 500px;
+}
+
+#footer {
+  height: 250px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #A1E67C;
+  overflow: hidden;
+  background: #576151;
+}
+
+#footer .footerCircle {
+  height: 6000px;
+  width: 6000px;
+  border-radius: 50%;
+  background: #C9E0BD;
+  position: relative;
+  left: -2270px;
+  top: -5900px;
+}
+
+.footerText {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background: transparent;
+  top: 250px;
+  color: #A1E67C;
 }
 

@@ -14,7 +14,9 @@
        <!--Header-->
        @include('layouts.header')
        
-       @include('content')
+       <div class="container">
+              @include('content')
+       </div>
        
        <!--Footer-->
        @include('layouts.footer')
